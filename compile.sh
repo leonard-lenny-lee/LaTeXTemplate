@@ -1,0 +1,10 @@
+OUTPUT_DIR="build"
+SRC_FILE="main.tex"
+OUT_FILE="main.pdf"
+# BIBER_TARGET="main"
+
+mkdir -p "$OUTPUT_DIR"
+pdflatex -output-directory="$OUTPUT_DIR" -interaction=nonstopmode "$SRC_FILE"
+# biber -input-directory="$OUTPUT_DIR" -output-directory="$OUTPUT_DIR" "$BIBER_TARGET"
+# pdflatex -output-directory="$OUTPUT_DIR" -interaction=nonstopmode "$SRC_FILE"
+# pdflatex -output-directory="$OUTPUT_DIR" -interaction=nonstopmode "$SRC_FILE"
